@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+    <Appenders>
+   		<Console name="LogToConsole" >
+    		<PatternLayout>
+    			<Pattern>%19d %-5L %-5p %c %-20M %m%n</Pattern>
+    		</PatternLayout>	    
+  		</Console>
+  		<RollingFile name="LogToFile" 
+ 		fileName="${sys:user.dir}/settings/log/bats.log" 
+  		ignoreExceptions="false" 
+  		filePattern="${sys:user.dir}/settings/log/bats.%i.log.gz">
+    		<PatternLayout>
+    			<Pattern>%19d %-5L %-5p %c %-20M %m%n</Pattern>
+    		</PatternLayout>
+    		<Policies>
+    			<SizeBasedTriggeringPolicy size="10MB" />
+    		</Policies>	
+    		<DefaultRolloverStrategy max="5" />
+  		</RollingFile> 
+		
+    </Appenders>
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="LogToConsole"/>
+            <AppenderRef ref="LogToFile"/>
+        </Root>
+    </Loggers>
+</Configuration>

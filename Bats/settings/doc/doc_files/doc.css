@@ -1,0 +1,131 @@
+.Footer {
+    color: #000000;
+    font-family: 'TimesNewRomanPSMT', 'Times New Roman', 'serif';
+    font-size: 12pt;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 15pt;
+    margin-bottom: 0pt;
+    margin-left: 0pt;
+    margin-right: 0pt;
+    margin-top: 0pt;
+    opacity: 1.00;
+    padding-bottom: 0pt;
+    padding-top: 0pt;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0pt;
+    text-transform: none;
+}
+.Head_2 {
+    color: #333399;
+    font-family: 'ArialMT', 'Arial', 'sans-serif';
+    font-size: 14pt;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 16pt;
+    margin-bottom: 0pt;
+    margin-left: 28.4pt;
+    margin-right: 0pt;
+    margin-top: 0pt;
+    opacity: 1.00;
+    padding-bottom: 3pt;
+    padding-top: 6pt;
+    text-align: left;
+    text-decoration: none;
+    text-indent: -28.4pt;
+    text-transform: none;
+}
+.Head_3 {
+    color: #008000;
+    font-family: 'ArialMT', 'Arial', 'sans-serif';
+    font-size: 12pt;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 14pt;
+    margin-bottom: 0pt;
+    margin-left: 28.4pt;
+    margin-right: 0pt;
+    margin-top: 0pt;
+    opacity: 1.00;
+    padding-bottom: 3pt;
+    padding-top: 6pt;
+    text-align: left;
+    text-decoration: none;
+    text-indent: -28.4pt;
+    text-transform: none;
+}
+.Normal_1 {
+    color: #000000;
+    font-family: 'TimesNewRomanPSMT', 'Times New Roman', 'serif';
+    font-size: 12pt;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 15pt;
+    margin-bottom: 0pt;
+    margin-left: 0pt;
+    margin-right: 0pt;
+    margin-top: 0pt;
+    opacity: 1.00;
+    padding-bottom: 0pt;
+    padding-top: 0pt;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0pt;
+    text-transform: none;
+}
+.Normal_red {
+    color: #800000;
+    font-family: 'TimesNewRomanPSMT', 'Times New Roman', 'serif';
+    font-size: 12pt;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 15pt;
+    margin-bottom: 0pt;
+    margin-left: 28.4pt;
+    margin-right: 0pt;
+    margin-top: 0pt;
+    opacity: 1.00;
+    padding-bottom: 0pt;
+    padding-top: 0pt;
+    text-align: left;
+    text-decoration: none;
+    text-indent: -28.4pt;
+    text-transform: none;
+}
+.Normal, .layout_style_1 {
+    width: 482pt;
+}
+.layout_style_1 {
+    width: 482pt;
+}
+.Page_Number {
+    color: #000000;
+    line-height: 15pt;
+    opacity: 1.00;
+}
+.graphic_shape_style_default {
+    background: #56a626;
+    border: 1pt #000000 solid;
+    float: none;
+    margin: 0pt;
+    opacity: 1.00;
+}
+div {
+    overflow: visible;
+}
+img {
+    border: none;
+}
+.searchtext {
+}

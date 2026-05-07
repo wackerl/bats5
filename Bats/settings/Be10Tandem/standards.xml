@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<standard date="Fri May 04 07:08:03 CEST 2007">
+  <std name="S555">
+    <ra>95.5</ra>
+    <ra_sig>0.0</ra_sig>
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>-</delta>
+    <delta_nom>-</delta_nom>
+    <delta_sig></delta_sig>
+    <pmC></pmC>
+    <pmC_sig></pmC_sig>
+    <active>true</active>
+  </std>
+  <std name="">
+    <ra />
+    <ra_sig />
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>-17.8</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.1</delta_sig>
+    <pmC>134.066</pmC>
+    <pmC_sig>0.05</pmC_sig>
+    <active>true</active>
+  </std>
+  <std name="">
+    <ra>1.21</ra>
+    <ra_sig>0.0</ra_sig>
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>-11.2</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.1</delta_sig>
+    <pmC>150.61</pmC>
+    <pmC_sig>0.11</pmC_sig>
+    <active>true</active>
+  </std>
+  <std name="">
+    <ra>1.21</ra>
+    <ra_sig>0.0</ra_sig>
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>-11.6</delta>
+    <delta_nom>-11.6</delta_nom>
+    <delta_sig>0.1</delta_sig>
+    <pmC>346.04</pmC>
+    <pmC_sig>1.0</pmC_sig>
+    <active>true</active>
+  </std>
+  <std name="">
+    <ra>1.21</ra>
+    <ra_sig>0.0</ra_sig>
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>-19.6</delta>
+    <delta_nom>-19.0</delta_nom>
+    <delta_sig>0.1</delta_sig>
+    <pmC>105.26</pmC>
+    <pmC_sig>0.0</pmC_sig>
+    <active>true</active>
+  </std>
+  <std name="">
+    <ra>1.21</ra>
+    <ra_sig>0.0</ra_sig>
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>-20.0</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>3.0</delta_sig>
+    <pmC>107.0</pmC>
+    <pmC_sig>2.0</pmC_sig>
+    <active>true</active>
+  </std>
+  <std name="">
+    <ra>1.21</ra>
+    <ra_sig>0.0</ra_sig>
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta>-17.8</delta>
+    <delta_nom>-25.0</delta_nom>
+    <delta_sig>0.1</delta_sig>
+    <pmC>134.066</pmC>
+    <pmC_sig>0.05</pmC_sig>
+    <active>true</active>
+  </std>
+</standard>
+

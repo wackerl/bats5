@@ -1,0 +1,500 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Untitled Page</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1404.47">
+  <style type="text/css">
+    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p4 {margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p7 {margin: 0.0px 0.0px 6.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    li.li5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000}
+    li.li6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {-webkit-text-stroke: 0px #000000}
+    table.t1 {width: 600.0px}
+    td.td1 {width: 600.0px}
+    td.td2 {width: 200.0px}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<table width="600.0" cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td colspan="3" valign="middle" class="td1">
+        <h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Change Log</b></span></h3>
+        <p class="p2"><span class="s1"> </span></p>
+        <p class="p3"><span class="s1"><b>5.70:</b></span></p>
+        <p class="p4"><span class="s1"><b>15.05.2025<span class="Apple-converted-space"> </span></b></span></p>
+        <ul class="ul1">
+            <li class="li5">Cycles and run status (active) is stored with evaluation<sup>14</sup>C</li>
+            <li class="li5">New DB fields are required!<br><br>CREATE TABLE db_ams.calc_cycle_t (
+	calcset varchar(20) NOT NULL,
+	run varchar(9) NOT NULL,
+	cycle smallint(6) NOT NULL,
+	active smallint NOT NULL,
+	CONSTRAINT calc_cycle_t_pk PRIMARY KEY (calcset,run,cycle)
+)
+ENGINE=InnoDB
+<br>
+<br>
+CREATE TABLE db_ams.calc_run_t (
+	calcset varchar(20) NOT NULL,
+	run varchar(8) NOT NULL,
+	active SMALLINT NULL,
+	CONSTRAINT calc_run_t_pk PRIMARY KEY (calcset,run)
+)
+ENGINE=InnoDB
+
+</li>
+        </ul>
+        <p class="p3"><span class="s1"><b>5.15:</b></span></p>
+        <p class="p4"><span class="s1"><b>23.08.2024<span class="Apple-converted-space"> </span></b></span></p>
+        <ul class="ul1">
+            <li class="li5">Corrected &Delta;<sup>14</sup>C</li>
+            <li class="li5">Reactor number can be read from DB</sup>C</li>
+            <li class="li5">Correct implementation of &#8796;<sup>14</sup>C</li>
+            <li class="li5">Correct implementation of &#8796;<sup>14</sup>C</li>
+            <li class="li5">Blank uncertainty (scatter of blank) is now calculated correctly</li>
+        </ul>
+        <p class="p3"><span class="s1"><b>5.0</b></span></p>
+       <p class="p4"><span class="s1"><b>27.07.2023<span class="Apple-converted-space"> </span></b></span></p>
+        <ul class="ul1">
+            <li class="li5">Radiocarbon calibration added again</li>
+            <li class="li5">Some new libraries</li>
+            <li class="li5">Regression in current correction is now calculated on active cycles only</li>
+        </ul>
+        <p class="p3"><span class="s1"><b> </b></span></p>
+        <p class="p3"><span class="s1"><b>4.5:</b></span></p>
+        <p class="p4"><span class="s1"><b>24.02.2022<span class="Apple-converted-space"> </span></b></span></p>
+        <ul class="ul1">
+            <li class="li5">Radiocarbon calibration removed</li>
+            <li class="li5">New libraries (primarily for logging) for compatibility reasons.</li>
+            <li class="li5">New field to show preparation method 1.</li>
+            <li class="li5">More precise value for coulomb number used.</li>
+        </ul>
+        <p class="p3"><span class="s1"><b> </b></span></p>
+        <p class="p3"><span class="s1"><b>4.30:</b></span></p>
+        <p class="p4"><span class="s1"><b>17.08.2018<span class="Apple-converted-space"> </span></b></span></p>
+        <ul class="ul1">
+            <li class="li5">Bugfix standard import from file (Class not set properly in table)</li>
+            <li class="li5">Window for cycles is refreshed instead of replaced when switching from one cycle to the next.</li>
+        </ul>
+        <p class="p3"><span class="s1"><b> </b></span></p>
+        <p class="p3"><span class="s1"><b>4.20:</b></span></p>
+        <p class="p4"><span class="s1"><b>28.10.2016<span class="Apple-converted-space"> </span></b></span></p>
+        <ul class="ul1">
+            <li class="li5">Improved sorting of labels (sort also with position)</li>
+            <li class="li5">Removed Oracle data import</li>
+            <li class="li6"><span class="s2"></span><span class="s1">Bugfix: Magazine could not be opened, when position in db was NULL. Position is now set 0 in this case.</span></li>
+        </ul>
+        <p class="p3"><span class="s1"><b> </b></span></p>
+        <p class="p3"><span class="s1"><b>4.15:</b></span></p>
+        <p class="p4"><span class="s1"><b>30.09.2016<span class="Apple-converted-space"> </span></b></span></p>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Name of calibration curve can now be saved to db (rename eth_nt2.xml to eth_nt.xml in settings/C14/db_io and create field `cal_curve` VARCHAR(20) in `db_ams`.`target_t`)</span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Changed sample_id to target_id (db must be changed to have target_id instead of sample_id!)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Sort not done o run number but on recno<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Improved file only mode<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">New sample import for new HV machines inserted<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <p class="p3"><span class="s1"><b> </b></span></p>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>4.00:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>11.05.2015<span class="Apple-converted-space"> </span></b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Standard and blank table is displayed better<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">No restart is required anymore after settings are changed<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Program should not stop working when path is not set correctly in preferences<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Table settings can be opend with right-click on headers<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Cycle editing is impoved and a graph added<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Menu and Icons show-up properly depending on DB settings<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">DB can now be disabled in preferences<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Folder for temporary files can now be selected with a browser window<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Program checks if folder for temporary files is available at start-up<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Introduced error bars in graphs (current and time correction)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">BrowserLauncher2 removed (new Java native mode used)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">When DB NT is used, standard and blank definitions are now loaded from the database<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Introduced auomatic logout from DB (after a given time)<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <p class="p2"><span class="s1"> </span></p>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>3.6x:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>04.04.2014<span class="Apple-converted-space"> </span></b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Standard table was not showing d13C correctly<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Many small but-fixes<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><br>
+</span></h5>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>3.5x:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>04.01.2013<span class="Apple-converted-space"> </span></b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Password is not saved in plain text anymore<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Menubar and toolbar is updated<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Deactivated Samples (or Targets) are not anymore saved to DB<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Data saved to DB can now be blocked! (Important: DB must be updated)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Replace of "&lt;" and "&gt;" with html special characters in text fields<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Deactivated samples ar not saved to target_t anymore<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Change in DB!!! Added field active in table calc_sample_t (samllint, not null, default:1)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Samples are now deactivated without deactivating the individual runs (passes).<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><br>
+</span></h5>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>3.2x:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>31.07.2012<span class="Apple-converted-space"> </span></b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Data output corrected (removed one wrong molecular correction)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Introduced absolute F14C<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Changed lambda from 8223 to 8267 for absolute calculations<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>01.11.2011<span class="Apple-converted-space"> </span></b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Weighting of standard uncertainties slightly changed<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Multiplication factor for tables changed from integer to double (allows now divisions...)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Info panel updated<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>3.1x:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>21.04.2011<span class="Apple-converted-space"> </span></b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">The molecular correction was not always correctly displayed in the output file (fixed)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Logging extended in calibration part.<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Plot for current correction slightly modified.<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Uncertainty of standards was not correclty used in error calculation for the samples in radiocarbon calculations (has only a significant influence when standard mean value is different from 1 E-12).<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Plot for current correction slightly modified.<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Many small bubgixes for db connection with NT (should now be usable).<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Autocalc was activated when .bats files were opened, it is now deactivated<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Improved save to Excel (better formatting, collored std and bl)<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><br>
+</span></h6>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>2.9x:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>21.07.2010<span class="Apple-converted-space"> </span></b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Default directory for saving data can now be changed<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Changed saving procedures in calibration plots<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added possibility for processing blank subtraction (in addition to normal blank)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Changed save to db (changes in DB)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Bugfix in file open (didn't read all correction correctly)<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><br>
+</span></h6>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>2.8x:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>24.06.2010<span class="Apple-converted-space"> </span></b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Added deadtime correction<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Activated insert mode in text input fields<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Year zero in AD/BC mode is removed in calibation<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Title in correction plots corrected for current and time correction<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">NEC data import added<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><br>
+</span></h5>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>2.6x:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>22.04.2010<span class="Apple-converted-space"> </span></b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Added save of calibration data to file<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Changed behaviour of Preferences<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Calibration ranges are automatically calculated, when files are saved<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Calibration is updated</span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Warning implemented, when standard or blank mean is fixed, but corrections will are to be changed (to avoid wrong calculations)</span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Standard ans blank mean is now fixed with the active checkbox<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">New position-sort of samples in first table<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">DB connection to NT tables: Calculations can also be saved to db<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <p class="p2"><span class="s1"> </span></p>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>2.5:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>01.03.2010<span class="Apple-converted-space"> </span></b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Calcium implemented<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Automatic resize of cycle table<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Only one DB connection is active at once!<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Fields in Menu bar are deactivated when not usable<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">New bats-file format: sample information and run information is separated<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Schemata field removed for MySQL db, should now be included in table fields.<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Settings of calibration plot are now saved seperately in new file (calib.xml)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Import from new database added (instead of opend from db). Completely rewritten DbIO!<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">When no data is present, nothing should now be displayed, saved or calculated (Setting.no_data).<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added new fields to sample class: sample_nr, prep_nr, target_nr, desc2, userlabel_nr, material fraction.<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">No character replacement in label and comment field anymore -&gt; changed save to file.<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b> </b></span></h5>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>2.0:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>12.10.2009<span class="Apple-converted-space"> </span></b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">MySQL: Connection problem solved. Connection is tested to be still valid. Otherwise it is reconnected.<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Bugfix: sigma of standard mean was wrong, when cycle deactivated<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Made cycle import to work with MySQL (fixed several bugs)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Calibrated ranges for samples can be calculated (and shown in table).<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Changed Font to UTF8 (for special characters).<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Runs with no data are now automatically deactivated (when there is no runtime)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Bugfix: sigma of sample standards was not correct (deactivated samples were also taken!).<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Changed behaviour of TextFields in Preferences (to Focus lost).<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">New import of HV measurement files<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">New internal data structure (major change). Sample info is now only stored once, and not for every run again and again.<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b> </b></span></h5>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>1.5:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>01.04.2009<span class="Apple-converted-space"> </span></b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Bugfix: ra_bl for samples was not caculated right, when split correction was applied (no effect on the end result)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added first version of SwissCal! (with save and manual scaling of axes)<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <p class="p2"><span class="s1"><br>
+</span></p>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>1.2x:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>18.02.2009<span class="Apple-converted-space"> </span></b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Many bugfixes for Pu calculation (eg uranium correction), Pu should now work!<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Bugfix: sample scatter was not loaded from file.<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Fixed blank scatter was removed from the calculations and replaced with an external error (sample scatter)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Always the error (and never the sigma) of the d13C of the standards is taken<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Bugfix: Sigma of standard mean was not calculated properly, when a run was deactivated</span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Cycle import; standard deviation also set, when only 1 cylcle is imported<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b> </b></span></h5>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>1.1x:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>10.10.2008<span class="Apple-converted-space"> </span></b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Bugfix: Sigma of standard mean was not calculated properly, when a run was deactivated.<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Settings improved (font size)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Info panel can be set to the right and left<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Debuging: Constant contamination; ratio could not be set to 0!<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Debuging: last run was not imported from Oracle!<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Absolute pmC is calculated (added sample date)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Small change in data import from Oracle; to_char of timedat removed (-&gt; in db_ora.xml timedat could be added)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Info panel can now be moved to the right side<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b> </b></span></h5>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>1.0x:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>01.07.2008<span class="Apple-converted-space"> </span></b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">xhtml output improved (corrections are given in a more flexible way)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Pu data reduction should work now (experimental)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Oxcal can now be directely started from Bats (still experimental, no modern and marin samples possible Tryed to implement Oxcal connection; seems not to work correctely yet!<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Query changed to get magazine list from Oracle and MySQL(a lot faster, but year is not selectable anymore!)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Login slightly improved for Oracle<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Cycle edit added (not jet tested for all isotopes!)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Debugged font size changes<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Improved output; only used corrections are given<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Improved and debuged information panel (only used corrections are visible)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added zooming of xhtml-panel (there is still coming an error, but with no visible complications; flying saucer error?)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Updated flying saucer (xhtml)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added some toolbar buttons<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Isobar correction modified to be used for Be as well<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Be import from DB added (test status)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Pu import and calculations added (test status)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Implemented timeout after a given time for DB connection<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added constant contamination (save/open should work as well)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Corrected cycle import (sigma of ratio was wrong)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Error of corrected radioisotope of samples was wrong, corrected<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Forgotten to save and open fractionation correction -&gt; added to file and database<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Corrected statistical scatter of std/bl<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Made program more tolerant to missing data (was a problem with MySQL)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Information of Corrections in xhtml file and in panel is displayed better<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Corected settings of DB import (change settings did not work properly)<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <p class="p2"><span class="s1"> </span></p>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>1.0<i>beta</i>:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>17.01.2008</b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Changes in modification of data in tables (r, a, b and runtime cannot be changed anymore)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added constant background (modified InfoPane as well)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Second DB can be selected up to save data (selectable)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Modified Oracle connection (for better user experiance)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Recalc deactivated when calculated data is loaded (from .bats-file and DB)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Program reset implemented (to be extended)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Limits can be set for columns in table (highlighted when out of limits)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added Chi2<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added save to calc-set<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Removed bug in save to DB<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Corrected xhtml output<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Corrected calculation for error of current and blank corrected values<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Implemented calculations for Pu/Pa (testing).<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Corrected some wrong calculations in DefaultCalc (sigma was wrong...)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Sigma of runs was not jet calculated the way it should... Corrected<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">New table format files are now saved properly and program remembers which one was the last<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Changed .xml format of settings to UTF-8<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">New Stylesheet for output.<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">The selected format file for the .xhtml output is taken for format of all output files as well.<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Format of files: Datafields are now named!<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <p class="p2"><span class="s1"> </span></p>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>0.9:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>12.11.2007</b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Improved save to file. Excel export is added!<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added open pdf for printing (experimental)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Improved MySQL save/open<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added MySQL import<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Re-organised Menue (-&gt; DB menue)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added save to pdf<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Changed stylesheet (and code)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added comment for magazine and for samples (for data reduction)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Improved list of last files (should be updated as well when autosave is on)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Fixed some bugs for data save to DB, it should now work properly (deleted samples were lost before)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Relative errors of std and bl can now be entered, too<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added separate C14 for Tandem<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Made some small bugfixes and improvements<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Updated flying saucer to 0.8pre<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <p class="p2"><span class="s1"> </span></p>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>0.8:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>11.09.2007</b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Changed preferences (DB/UI settings etc.)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Fonts can now be changed<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added connection to mysql database (open/save to mysql possible)<br>
+used only locally - MySQL-DB still missing!<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Moved isobar corrections to Correction class (from CalcData). Still the correction can only be done once (but this could now easily be changed)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Bugfix: Save to .bats-file was not correct for isobar corrections<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Bugfix: Open .bats-file was not correct<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Bugfix: Imput fields and checkbox didn't work correctly<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Bugfix: (De)Activate runs was not properly implemented<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Bugfix: If field with Double was changed, the value was not set right, when Bugfix: Isobar correction error was not jet (properly) calculated<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Always recalculate when new data is imported<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added scatter of mean of standards<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><br>
+</span></h5>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>0.7:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>20.08.2007</b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Added time correction (improved date import)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added toolbar with some Preferences (is not jet updated correctly!)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added different isobar correction for 10Be<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added slope fuction through 0 (error weighted)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added run number to plots<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added Preferences toolbar button<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">iso_err is calculated from poisson statistics of iso by default (but not for 14C)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added coloring of blank (and standard) in output file (to see, if blank substraction is done)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Bugfix: Poisson statistic was wrongly impemented (calculated when false!)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Bugfix: CorrIndex was not jet saved to file!<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Additional information added in the info panel<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Updated libraries Flying sourcer (from 0.7pre1 to official 0.7) and JFreeChart (1.04 to 1.06), has some advantages (and disadvantages...)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Current and time corrections are now done for every Corretion idividually</span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Standard and Blank plot: individual mean lines are now plotted when data is splitted<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Page break for output file can be automatised and on every sheet there is a new table header.<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Standard and blank tables (with plot) can now be run sorted in addtion to label sorted (-&gt;toolbar)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Changed from Fatjar to normal jar with additional directory with external libraries.<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added autosave of bats-files<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Improved recalculation<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added Toolbar that shows status of calculations<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">... and many small changes<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <p class="p2"><span class="s1"> </span></p>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>0.6:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>11.06.2007</b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Corrected file save for .cvs (comma delimited) and .txt (tab delimited)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Corrected plot (colors are now right)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Corrected calculation of 13/12 of std (uncorrected ba was taken instead of ba_cur)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Moved calc checkboxes from Infopanel to toolbar<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <p class="p2"><span class="s1"> </span></p>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>0.5:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>04.05.2007</b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">If no blank is available, it is set to 0 (before there was an error!)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Added re-initiallise of data (makes new correction, sample mean etc.)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Add data form DB added<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Add first 10Be and 129I calculations (only testing!)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Change isotope added<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Improved cycle import (-&gt; better run number)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Selection of charge state added<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <p class="p2"><span class="s1"> </span></p>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>0.4:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>22.04.2007</b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">firstRun / lastRun added to correction (correction should only be valide for this range)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Magazine information is loaded from .bats files.<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Removed separate plot of standards and blanks<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Several corrections can be entered for one data-set (-&gt; split correction), is still experimental (hope it works!)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Exteded autorecalc functionality (selectable in Preferences), can now do recalc also when cycles are activated or sampletype is changed.<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Corrected sigma errors (sigma is now only defined by distribution; includes not all errors!) -&gt; sigma errors can now be compared with pure counting statistics.<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Replaced fields like ratrue, rtrue and batrue with only one field called active<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Changed the corrected mean+- calculations to a more logical way, idea is still the same.<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Scrolling problem of table header finally solved!<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">.xhtml output of samples only can be selected as well (in addition to runs and samples). .xhtml output can directly be opened in default browser from BATS. Some small changes made to the output format.<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Mean of current and total counts (background corrected) of all standards and blanks added.<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Linear regression added to isobar correction plot<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">And several small changes...<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <p class="p2"><span class="s1"> </span></p>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>0.3:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>10.04.2007</b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Set language to english (for buttons)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Corrected + / - in format tables<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Corrected and updated toolbars<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Changed correction set... hope it is better now!<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Data file format changed (.bats instead of .bml). No old files can be opened anymore! (Better to get rid of it now!)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Last file shows up immediatly in the menu, when saved (program has not to be restartet)<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <p class="p2"><span class="s1"> </span></p>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>0.2:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>05.04.2007</b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Color settings added<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">SettingPanel renamed to Preferences<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Oracle connection rewritten (Password and synonym is stored!).<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Fractionation correction for 14/12 of standards added (and corrected)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Cycle import from db added<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">First version of Help implemented (with default browser of the OS)<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Log file view added<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Error of bg correction corrected (still not quiet right!)<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <p class="p2"><span class="s1"> </span></p>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>0.1:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>24.03.2007</b></span></h6>
+        <ul class="ul1">
+          <li class="li6"><span class="s2"></span><span class="s1">Poisson distribution added<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Linear regression added to current plots<span class="Apple-converted-space"> </span></span></li>
+          <li class="li6"><span class="s2"></span><span class="s1">Nominal value of 14/12 set to 100 pmC.<span class="Apple-converted-space"> </span></span></li>
+        </ul>
+        <p class="p2"><span class="s1"> </span></p>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>0.00:</b></span></h5>
+        <h6 style="margin: 0.0px 0.0px 21.0px 0.0px; line-height: 10.0px; font: 9.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>15.03.2007</b></span></h6>
+        <p class="p2"><span class="s1">First release (full of bugs!)</span></p>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><br>
+</span></h5>
+        <h5 style="margin: 0.0px 0.0px 16.6px 0.0px; line-height: 13.0px; font: 10.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><br>
+</span></h5>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" valign="middle" class="td1">
+        <p class="p2"><span class="s1"> </span></p>
+        <p class="p7"><span class="s1"><br>
+</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s1"><i>04.06.2015</i></span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p6"><span class="s1"><br>
+</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p8"><span class="s1"><i>by Lukas Wacker</i></span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stdPu date="Thu Aug 14 09:02:35 CEST 2008">
+  <column Nr="0">
+    <name><![CDATA[pos.]]></name>
+    <value>posit</value>
+    <val-name>posit</val-name>
+    <width>36</width>
+    <format />
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="1">
+    <name><![CDATA[run]]></name>
+    <value>run</value>
+    <val-name>run</val-name>
+    <width>70</width>
+    <format />
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="2">
+    <name><![CDATA[comment]]></name>
+    <value>commentinfo</value>
+    <val-name>commentinfo</val-name>
+    <width>100</width>
+    <format />
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="3">
+    <name><![CDATA[label]]></name>
+    <value>label</value>
+    <val-name>label</val-name>
+    <width>70</width>
+    <format />
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="4">
+    <name><![CDATA[<html><sup>239</sup>Pu<br>corr.</html>]]></name>
+    <value>r_cor</value>
+    <val-name>r_cor</val-name>
+    <width>60</width>
+    <format>#,##0</format>
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="5">
+    <name><![CDATA[<html><sup>240</sup>Pu<br></html>]]></name>
+    <value>b_cur</value>
+    <val-name>b_cur</val-name>
+    <width>60</width>
+    <format>#,##0</format>
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="6">
+    <name><![CDATA[<html><sup>239</sup>Pu<br>/<sup>240</sup>Pu<br>(%)</html>]]></name>
+    <value>rb_bg</value>
+    <val-name>rb_bg</val-name>
+    <width>60</width>
+    <format>#,##0.0</format>
+    <multi>100</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="7">
+    <name><![CDATA[<html><sup>239</sup>Pu<br>/<sup>240</sup>Pu<br>(%)</html>]]></name>
+    <value>std_rb</value>
+    <val-name>std_rb</val-name>
+    <width>60</width>
+    <format>#,##0.0</format>
+    <multi>100</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="8">
+    <name><![CDATA[err]]></name>
+    <value>std_rb_err</value>
+    <val-name>std_rb_err</val-name>
+    <width>36</width>
+    <format>0.0</format>
+    <multi>100</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="9">
+    <name><![CDATA[sig]]></name>
+    <value>std_rb_sig</value>
+    <val-name>std_rb_sig</val-name>
+    <width>36</width>
+    <format>0.0</format>
+    <multi>100</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="10">
+    <name><![CDATA[chi2r]]></name>
+    <value>std_rb_chi</value>
+    <val-name>Χ²(red) 239/240 std normalised</val-name>
+    <width>36</width>
+    <format>0.0</format>
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="11">
+    <name><![CDATA[cyles]]></name>
+    <value>cycles</value>
+    <val-name>cycles</val-name>
+    <width>40</width>
+    <format>#,##0</format>
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="12">
+    <name><![CDATA[active]]></name>
+    <value>active</value>
+    <val-name>active</val-name>
+    <width>45</width>
+    <format />
+    <multi>1</multi>
+    <edit>true</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+</stdPu>
+

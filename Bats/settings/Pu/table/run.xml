@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run date="Thu Feb 14 07:37:36 CET 2008">
+  <column Nr="0">
+    <name><![CDATA[pos]]></name>
+    <value>posit</value>
+    <val-name>posit</val-name>
+    <width>40</width>
+    <format />
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="1">
+    <name><![CDATA[run]]></name>
+    <value>run</value>
+    <val-name>run</val-name>
+    <width>70</width>
+    <format />
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="2">
+    <name><![CDATA[comment]]></name>
+    <value>commentinfo</value>
+    <val-name>commentinfo</val-name>
+    <width>95</width>
+    <format />
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="3">
+    <name><![CDATA[label]]></name>
+    <value>label</value>
+    <val-name>label</val-name>
+    <width>70</width>
+    <format />
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="4">
+    <name><![CDATA[<html><sup>242</sup>Pu</html>]]></name>
+    <value>a</value>
+    <val-name>a</val-name>
+    <width>55</width>
+    <format>#,##0</format>
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="5">
+    <name><![CDATA[<html>time<br>(s)</html>]]></name>
+    <value>runtime_a</value>
+    <val-name>runtime_a</val-name>
+    <width>48</width>
+    <format>#,##0</format>
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="6">
+    <name><![CDATA[<html><sup>239</sup>Pu</html>]]></name>
+    <value>r</value>
+    <val-name>r</val-name>
+    <width>55</width>
+    <format>#,##0</format>
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="7">
+    <name><![CDATA[<html>time<br>(s)</html>]]></name>
+    <value>runtime</value>
+    <val-name>runtime</val-name>
+    <width>48</width>
+    <format>#,##0</format>
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="8">
+    <name><![CDATA[<html><sup>240</sup>Pu</html>]]></name>
+    <value>b</value>
+    <val-name>b</val-name>
+    <width>55</width>
+    <format>#,##0</format>
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="9">
+    <name><![CDATA[<html>time<br>(s)</html>]]></name>
+    <value>runtime_b</value>
+    <val-name>runtime_b</val-name>
+    <width>48</width>
+    <format>#,##0</format>
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="10">
+    <name><![CDATA[<html><sup>238</sup>U</html>]]></name>
+    <value>g1</value>
+    <val-name>g1</val-name>
+    <width>55</width>
+    <format>#,##0</format>
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="11">
+    <name><![CDATA[<html>time<br>(s)</html>]]></name>
+    <value>runtime_g1</value>
+    <val-name>runtime_g1</val-name>
+    <width>48</width>
+    <format>#,##0</format>
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="12">
+    <name><![CDATA[<html><sup>239</sup>Pu/<sup>242</sup>Pu<br>(%) raw</html>]]></name>
+    <value>ra</value>
+    <val-name>ra</val-name>
+    <width>84</width>
+    <format>#,##0.00</format>
+    <multi>100</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="13">
+    <name><![CDATA[<html><sup>239</sup>Pu/<sup>242</sup>Pu</sup>)<br>(%) bg</html>]]></name>
+    <value>ra_bg</value>
+    <val-name>ra_bg</val-name>
+    <width>84</width>
+    <format>#,##0.00</format>
+    <multi>100</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="14">
+    <name><![CDATA[<html>err<br>abs.</html>]]></name>
+    <value>ra_bg_err</value>
+    <val-name>ra_bg_err</val-name>
+    <width>45</width>
+    <format>#,##0.00</format>
+    <multi>100</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="15">
+    <name><![CDATA[<html><sup>240</sup>Pu/<sup>242</sup>Pu<br>(%) bg</html>]]></name>
+    <value>ba_cur</value>
+    <val-name>ba_cur</val-name>
+    <width>84</width>
+    <format>#,##0.00</format>
+    <multi>100</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="16">
+    <name><![CDATA[<html>err<br>abs.</html>]]></name>
+    <value>ba_err</value>
+    <val-name>ba_err</val-name>
+    <width>45</width>
+    <format>0.00</format>
+    <multi>100</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="17">
+    <name><![CDATA[<html><sup>240</sup>Pu/<sup>239</sup>Pu<br>bg</html>]]></name>
+    <value>br_cur</value>
+    <val-name>br_cur</val-name>
+    <width>84</width>
+    <format>#,##0.00</format>
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="18">
+    <name><![CDATA[<html>err<br>abs</html>]]></name>
+    <value>rb_err</value>
+    <val-name>rb_err</val-name>
+    <width>45</width>
+    <format>0.00</format>
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="19">
+    <name><![CDATA[cyles]]></name>
+    <value>cycles</value>
+    <val-name>cycles</val-name>
+    <width>32</width>
+    <format>#,##0</format>
+    <multi>1</multi>
+    <edit>false</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="20">
+    <name><![CDATA[type]]></name>
+    <value>sampletype</value>
+    <val-name>sampletype</val-name>
+    <width>45</width>
+    <format />
+    <multi>1</multi>
+    <edit>true</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+  <column Nr="21">
+    <name />
+    <value>active</value>
+    <val-name>active</val-name>
+    <width>24</width>
+    <format />
+    <multi>1</multi>
+    <edit>true</edit>
+    <chi>false</chi>
+    <high-limit>0.0</high-limit>
+    <low-limit>0.0</low-limit>
+  </column>
+</run>
+

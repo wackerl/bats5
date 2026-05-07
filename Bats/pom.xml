@@ -1,0 +1,199 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Bats</groupId>
+  <artifactId>Bats</artifactId>
+  <version>4.7.0</version>
+  <name>BATS</name>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>14</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+<!-- https://mvnrepository.com/artifact/batik/batik-all -->
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>batik-all</artifactId>
+    <version>1.16</version>
+    <type>pom</type>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.xmlgraphics/batik-anim -->
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>batik-anim</artifactId>
+    <version>1.16</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.xmlgraphics/batik-dom -->
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>batik-dom</artifactId>
+    <version>1.16</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.xmlgraphics/batik-ext -->
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>batik-ext</artifactId>
+    <version>1.16</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.xmlgraphics/batik-svg-dom -->
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>batik-svg-dom</artifactId>
+    <version>1.16</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.xmlgraphics/batik-transcoder -->
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>batik-transcoder</artifactId>
+    <version>1.16</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.xmlgraphics/batik-util -->
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>batik-util</artifactId>
+    <version>1.16</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.xmlgraphics/batik-swing -->
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>batik-swing</artifactId>
+    <version>1.16</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+<dependency>
+    <groupId>commons-codec</groupId>
+    <artifactId>commons-codec</artifactId>
+    <version>1.16.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-math -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-math</artifactId>
+    <version>2.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.xhtmlrenderer/core-renderer -->
+<dependency>
+    <groupId>org.xhtmlrenderer</groupId>
+    <artifactId>core-renderer</artifactId>
+    <version>R8</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.xhtmlrenderer/flying-saucer-core -->
+<dependency>
+    <groupId>org.xhtmlrenderer</groupId>
+    <artifactId>flying-saucer-core</artifactId>
+    <version>9.1.22</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.xhtmlrenderer/flying-saucer-pdf -->
+<dependency>
+    <groupId>org.xhtmlrenderer</groupId>
+    <artifactId>flying-saucer-pdf</artifactId>
+    <version>9.1.22</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.lowagie/itext -->
+<dependency>
+    <groupId>com.lowagie</groupId>
+    <artifactId>itext</artifactId>
+    <version>2.1.7</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/jaxen/jaxen -->
+<dependency>
+    <groupId>jaxen</groupId>
+    <artifactId>jaxen</artifactId>
+    <version>2.0.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.jfree/jcommon -->
+<dependency>
+    <groupId>org.jfree</groupId>
+    <artifactId>jcommon</artifactId>
+    <version>1.0.24</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.jdom/jdom2 -->
+<dependency>
+    <groupId>org.jdom</groupId>
+    <artifactId>jdom2</artifactId>
+    <version>2.0.6.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.jfree/jfreechart -->
+<dependency>
+    <groupId>org.jfree</groupId>
+    <artifactId>jfreechart</artifactId>
+    <version>1.5.4</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.20.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.20.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.jgoodies/looks -->
+<dependency>
+    <groupId>com.jgoodies</groupId>
+    <artifactId>looks</artifactId>
+    <version>2.2.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.33</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.maven.resolver/maven-resolver-api -->
+<dependency>
+    <groupId>org.apache.maven.resolver</groupId>
+    <artifactId>maven-resolver-api</artifactId>
+    <version>1.9.14</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/xalan/xalan -->
+<dependency>
+    <groupId>xalan</groupId>
+    <artifactId>xalan</artifactId>
+    <version>2.7.3</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/xalan/serializer -->
+<dependency>
+    <groupId>xalan</groupId>
+    <artifactId>serializer</artifactId>
+    <version>2.7.3</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/xerces/xercesImpl -->
+<dependency>
+    <groupId>xerces</groupId>
+    <artifactId>xercesImpl</artifactId>
+    <version>2.12.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/xerces/xml-apis -->
+<!-- https://mvnrepository.com/artifact/org.apache.xerces/xml-apis -->
+<!-- https://mvnrepository.com/artifact/xml-apis/xml-apis -->
+<dependency>
+    <groupId>xml-apis</groupId>
+    <artifactId>xml-apis</artifactId>
+    <version>1.4.01</version>
+</dependency>
+  	<dependency>
+  		<groupId>com.adobe.acrobat</groupId>
+  		<artifactId>acrobat</artifactId>
+  		<version>1.1</version>
+  	</dependency>
+  </dependencies>
+</project>

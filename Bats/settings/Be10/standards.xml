@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<standard date="Mon May 05 20:16:30 CEST 2008">
+  <std name="S555">
+    <ra>95.5</ra>
+    <ra_sig>0.0</ra_sig>
+    <ba />
+    <ba_nom />
+    <ba_sig />
+    <delta />
+    <delta_nom />
+    <delta_sig />
+    <pmC />
+    <pmC_sig />
+    <active>true</active>
+  </std>
+</standard>
+

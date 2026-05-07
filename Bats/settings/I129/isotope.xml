@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<isotope date="Mon Dec 03 11:54:01 CET 2007" version="pre0.95 (03.12.2007)">
+  <!--settings for isotope (I129) specific calculations-->
+  <calc>
+    <autocalc>
+      <std>true</std>
+      <std_err>true</std_err>
+      <std13>false</std13>
+      <std13_err>false</std13_err>
+      <blank>true</blank>
+      <blank_err>true</blank_err>
+    </autocalc>
+    <poisson>false</poisson>
+    <fract>true</fract>
+    <bg>
+      <isobar>iso</isobar>
+      <factor>0.000E00</factor>
+      <error>0.1</error>
+      <offset>0.0</offset>
+    </bg>
+      <scatter>0.000000</scatter>
+    <current>
+      <a>
+        <error_rel>1.0E-4</error_rel>
+        <error_abs>0.0</error_abs>
+        <offset>0.0</offset>
+      </a>
+      <b>
+        <error_rel>1.0E-4</error_rel>
+        <error_abs>0.0</error_abs>
+        <offset>0.0</offset>
+      </b>
+      <iso>
+        <error_rel>0.0010</error_rel>
+        <error_abs>0.0</error_abs>
+        <offset>0.0</offset>
+      </iso>
+      <correction>
+        <a_slope>0</a_slope>
+        <a_slope_off>5</a_slope_off>
+        <b_slope>0</b_slope>
+        <b_slope_off>5</b_slope_off>
+      </correction>
+      <charge>1</charge>
+    </current>
+    <nominal_ra>100.00000</nominal_ra>
+    <nominal_ba>1</nominal_ba>
+  </calc>
+  <db>
+    <ora active="true">
+      <last_iso>TI129</last_iso>
+      <last_year>2007</last_year>
+      <last_mag>I070828A</last_mag>
+      <virtual>true</virtual>
+      <cycle name="false">6</cycle>
+    </ora>
+    <last />
+    <sql-import active="false">
+      <last_year>2007</last_year>
+      <last_mag></last_mag>
+      <schemata>db_i129</schemata>
+      <ana>workana</ana>
+      <proto>workproto</proto>
+      <vana>workanav1</vana>
+      <vproto>workvproto</vproto>
+      <final>workfinal</final>
+      <virtual>true</virtual>
+      <cycle name="false">6</cycle>
+    </sql-import>
+    <sql>
+      <last_year>2007</last_year>
+      <last_mag></last_mag>
+      <schemata>I129</schemata>
+      <table_s>sample</table_s>
+      <table_c>correction</table_c>
+      <table_d>magazine</table_d>
+      <table_r>run</table_r>
+    </sql>
+    <cycle_edit>false</cycle_edit>
+  </db>
+  <file>
+    <last>
+      <filename />
+      <format>
+        <all />
+        <std />
+        <std13 />
+        <bl />
+        <run />
+        <sample />
+        <xhtml />
+      </format>
+    </last>
+    <format>
+      <all>/Users/lukas/Documents/workspace/Bats/settings/I129/table/all.xml</all>
+      <std>/Users/lukas/Documents/workspace/Bats/settings/I129/table/std.xml</std>
+      <std13 />
+      <bl>/Users/lukas/Documents/workspace/Bats/settings/I129/table/bl.xml</bl>
+      <run>/Users/lukas/Documents/workspace/Bats/settings/I129/table/run.xml</run>
+      <sample>/Users/lukas/Documents/workspace/Bats/settings/I129/table/sample.xml</sample>
+      <xhtml>/Users/lukas/Documents/workspace/Bats/settings/I129/table/xhtml.xml</xhtml>
+      <cycle>/Users/lukas/Documents/workspace/Bats/settings/I129/table/cycle.xml</cycle>
+    </format>
+  </file>
+  <!--tabbed pane set-up for this isotope-->
+  <tab_pane>
+    <tab1>passes and mean</tab1>
+    <tab2>passes only</tab2>
+    <tab3>blank</tab3>
+    <tab4><![CDATA[<html>std <sup>129</sup>I/<sup>127</sup>I</html>]]></tab4>
+    <tab5 attr="13/12"><![CDATA[<html>std <sup>13</sup>C/<sup>12</sup>C</html>]]></tab5>
+    <tab6>samples</tab6>
+    <tab7>output</tab7>
+  </tab_pane>
+  <!--standard set-up for this isotope-->
+  <std-setup>
+    <col>
+      <field>name</field>
+      <name>Name</name>
+    </col>
+    <col>
+      <field>ra</field>
+      <name>129I/127I</name>
+    </col>
+    <col>
+      <field>ra_sig</field>
+      <name>sigma</name>
+    </col>
+    <col>
+      <field>active</field>
+      <name>active</name>
+    </col>
+  </std-setup>
+  <graph>
+    <ba>
+      <title>12C correction (13/12)</title>
+      <data>runAllLabel</data>
+      <x_value multi="1">ana</x_value>
+      <x_axes>low-energy current (µA)</x_axes>
+      <y_value multi="100">ba_cur</y_value>
+      <y_axes>13/12 ratio (%)</y_axes>
+      <s_range>4</s_range>
+    </ba>
+    <bg>
+      <title>Isobar correction</title>
+      <data>runBlank</data>
+      <x_value multi="1">iso/a</x_value>
+      <x_axes>13CH / 12C</x_axes>
+      <y_value multi="1">ra_bg</y_value>
+      <y_axes>bg corrected 14/12 ratio (1E-12)</y_axes>
+      <s_range>4</s_range>
+      <unit>* iso * time</unit>
+    </bg>
+    <ra>
+      <title>127I current correction</title>
+      <data>runStd</data>
+      <x_value multi="1">a</x_value>
+      <x_axes>high-energy current (µA)</x_axes>
+      <y_value multi="1">ra_cur</y_value>
+      <y_axes>129/127 ratio (10-12)</y_axes>
+      <s_range>4</s_range>
+    </ra>
+    <time>
+      <title>Time correction</title>
+      <data>runStd</data>
+      <x_value multi="1">time</x_value>
+      <x_axes>time (h)</x_axes>
+      <y_value multi="1">std_ra</y_value>
+      <y_axes>129/127 (1E-12)</y_axes>
+      <s_range>4</s_range>
+    </time>
+  </graph>
+  <calib>false</calib>
+</isotope>
+
