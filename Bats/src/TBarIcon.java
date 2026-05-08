@@ -195,9 +195,6 @@ public class TBarIcon extends JToolBar implements ActionListener {
 		button4.setEnabled(!Setting.no_data);
 		button5.setEnabled(!Setting.no_data);
 		button6.setEnabled(!Setting.no_data);
-		if (System.getProperty("os.name").toLowerCase().startsWith("mac os x")) {
-		    button7.setEnabled(!Setting.no_data);
-		}
 		
 		if (Setting.getActive("/bat/isotope/db")) {		
 			button2.setVisible(true);

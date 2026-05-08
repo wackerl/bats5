@@ -81656,3 +81656,156 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2026-05-07 17:41:08,080 170   INFO  Setting init                 File (/Users/lukas/Documents/workspace_5/Bats/settings/general.xml) will be opened!
 2026-05-07 17:41:08,090 173   INFO  Setting init                 File (/Users/lukas/Documents/workspace_5/Bats/settings/general.xml) opened!
 2026-05-07 17:41:08,107 659   DEBUG Setting setIsotope           Last isotope was C14
+2026-05-07 21:03:43,015 183   DEBUG IODb logout               DB connection already closed!
+2026-05-07 21:03:43,022 1575  DEBUG IODb run                  LogOut
+2026-05-08 08:27:11,394 553   DEBUG Bats windowClosing        1329/774
+2026-05-08 08:27:11,415 367   DEBUG Setting save                 Old file (/Users/lukas/Documents/workspace_5/Bats/settings/general.xml) could not be renamed and will be overwritten!
+2026-05-08 08:27:28,315 377   ERROR Setting save                 XML-output could not be written to file: /Users/lukas/Documents/workspace_5/Bats/settings/general.xml
+2026-05-08 08:27:28,322 384   DEBUG Setting save                 Old file (/Users/lukas/Documents/workspace_5/Bats/settings/C14/isotope.xml) could not be renamed and will be overwritten!
+2026-05-08 08:27:33,563 394   ERROR Setting save                 XML-output could not be written to file: /Users/lukas/Documents/workspace_5/Bats/settings/C14/isotope.xml
+2026-05-08 08:27:33,564 401   DEBUG Setting save                 Old file (/Users/lukas/Documents/workspace_5/Bats/settings/C14/calib.xml) could not be renamed and will be overwritten!
+2026-05-08 08:27:36,878 415   ERROR Setting save                 XML-output could not be written to file: /Users/lukas/Documents/workspace_5/Bats/settings/C14/calib.xml
+2026-05-08 08:27:36,878 557   DEBUG Bats windowClosing        Setting are saved!
+2026-05-08 08:27:38,993 345   ERROR Setting selectLists          IOException for file: /Users/lukas/Documents/workspace_5/Bats/settings/C14/select.xml
+2026-05-08 08:28:02,304 217   FATAL Setting init                 File (/Users/lukas/Documents/workspace_5/Bats/settings/C14/isotope.xml) could not be opened or does not exist!
+java.io.FileNotFoundException: /Users/lukas/Documents/workspace_5/Bats/settings/C14/isotope.xml (No such file or directory)
+2026-05-08 08:43:45,673 488   DEBUG Bats main                 java.class.version: 70.0
+2026-05-08 08:43:45,678 489   DEBUG Bats main                 java.class.path: /Users/lukas/Documents/git/bats/Bats/target/classes:/Users/lukas/Documents/git/bats/Bats/lib/log4j-core-2.17.1.jar:/Users/lukas/Documents/git/bats/Bats/lib/acrobat.jar:/Users/lukas/Documents/git/bats/Bats/lib/BrowserLauncher2.jar:/Users/lukas/Documents/git/bats/Bats/lib/commons-codec-1.7.jar:/Users/lukas/Documents/git/bats/Bats/lib/commons-math-1.1.jar:/Users/lukas/Documents/git/bats/Bats/lib/core-renderer-minimal.jar:/Users/lukas/Documents/git/bats/Bats/lib/flying-saucer-core-9.1.20.jar:/Users/lukas/Documents/git/bats/Bats/lib/flying-saucer-pdf-9.1.20.jar:/Users/lukas/Documents/git/bats/Bats/lib/iText-2.0.8.jar:/Users/lukas/Documents/git/bats/Bats/lib/jcommon-1.0.15.jar:/Users/lukas/Documents/git/bats/Bats/lib/jfreechart-1.0.12.jar:/Users/lukas/Documents/git/bats/Bats/lib/looks-2.1.4.jar:/Users/lukas/Documents/git/bats/Bats/lib/mysql-connector-java-5.1.16-bin.jar:/Users/lukas/Documents/git/bats/Bats/lib/resolver.jar:/Users/lukas/Documents/git/bats/Bats/lib/log4j-api-2.17.1.jar:/Users/lukas/Documents/git/bats/Bats/lib/jaxen-1.2.0.jar:/Users/lukas/Documents/git/bats/Bats/lib/batik-all-1.16.jar:/Users/lukas/Documents/git/bats/Bats/lib/org.w3c.dom.svg-1.1.0.jar:/Users/lukas/Documents/git/bats/Bats/lib/jdom-2.0.6.jar:/Users/lukas/Documents/git/bats/Bats/lib/xml-apis-ext-1.3.04.jar:/Users/lukas/Documents/git/bats/Bats/lib/xercesImpl.jar:/Users/lukas/Documents/git/bats/Bats/lib/xmlgraphics-commons-2.8.jar:/Users/lukas/.m2/repository/xml-apis/xml-apis-ext/1.3.04/xml-apis-ext-1.3.04.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/xmlgraphics-commons/2.7/xmlgraphics-commons-2.7.jar:/Users/lukas/.m2/repository/commons-io/commons-io/1.3.1/commons-io-1.3.1.jar:/Users/lukas/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-anim/1.16/batik-anim-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-awt-util/1.16/batik-awt-util-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-css/1.16/batik-css-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-parser/1.16/batik-parser-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-shared-resources/1.16/batik-shared-resources-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-dom/1.16/batik-dom-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-xml/1.16/batik-xml-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-ext/1.16/batik-ext-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-svg-dom/1.16/batik-svg-dom-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-transcoder/1.16/batik-transcoder-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-bridge/1.16/batik-bridge-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-gvt/1.16/batik-gvt-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-svggen/1.16/batik-svggen-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-util/1.16/batik-util-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-constants/1.16/batik-constants-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-i18n/1.16/batik-i18n-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-swing/1.16/batik-swing-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-gui-util/1.16/batik-gui-util-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-script/1.16/batik-script-1.16.jar:/Users/lukas/.m2/repository/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar:/Users/lukas/.m2/repository/org/apache/commons/commons-math/2.2/commons-math-2.2.jar:/Users/lukas/.m2/repository/org/xhtmlrenderer/core-renderer/R8/core-renderer-R8.jar:/Users/lukas/.m2/repository/org/xhtmlrenderer/flying-saucer-core/9.1.22/flying-saucer-core-9.1.22.jar:/Users/lukas/.m2/repository/org/xhtmlrenderer/flying-saucer-pdf/9.1.22/flying-saucer-pdf-9.1.22.jar:/Users/lukas/.m2/repository/org/bouncycastle/bcmail-jdk14/1.64/bcmail-jdk14-1.64.jar:/Users/lukas/.m2/repository/org/bouncycastle/bcpkix-jdk14/1.64/bcpkix-jdk14-1.64.jar:/Users/lukas/.m2/repository/org/bouncycastle/bctsp-jdk14/1.46/bctsp-jdk14-1.46.jar:/Users/lukas/.m2/repository/org/bouncycastle/bcprov-jdk14/1.64/bcprov-jdk14-1.64.jar:/Users/lukas/.m2/repository/com/lowagie/itext/2.1.7/itext-2.1.7.jar:/Users/lukas/.m2/repository/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138.jar:/Users/lukas/.m2/repository/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138.jar:/Users/lukas/.m2/repository/jaxen/jaxen/2.0.0/jaxen-2.0.0.jar:/Users/lukas/.m2/repository/org/jfree/jcommon/1.0.24/jcommon-1.0.24.jar:/Users/lukas/.m2/repository/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.jar:/Users/lukas/.m2/repository/org/jfree/jfreechart/1.5.4/jfreechart-1.5.4.jar:/Users/lukas/.m2/repository/org/apache/logging/log4j/log4j-core/2.20.0/log4j-core-2.20.0.jar:/Users/lukas/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/Users/lukas/.m2/repository/com/jgoodies/looks/2.2.2/looks-2.2.2.jar:/Users/lukas/.m2/repository/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar:/Users/lukas/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar:/Users/lukas/.m2/repository/org/apache/maven/resolver/maven-resolver-api/1.9.14/maven-resolver-api-1.9.14.jar:/Users/lukas/.m2/repository/xalan/xalan/2.7.3/xalan-2.7.3.jar:/Users/lukas/.m2/repository/xalan/serializer/2.7.3/serializer-2.7.3.jar:/Users/lukas/.m2/repository/xerces/xercesImpl/2.12.2/xercesImpl-2.12.2.jar:/Users/lukas/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/lukas/.m2/repository/com/adobe/acrobat/acrobat/1.1/acrobat-1.1.jar:/Users/lukas/.m2/repository/mrj/MRJToolkitStubs/1.0/MRJToolkitStubs-1.0.jar
+2026-05-08 08:43:45,679 490   DEBUG Bats main                 java.version: 26.0.1
+2026-05-08 08:43:45,680 491   DEBUG Bats main                 java.vm.version: 26.0.1+8
+2026-05-08 08:43:45,680 492   DEBUG Bats main                 java.home: /Library/Java/JavaVirtualMachines/temurin-26.jdk/Contents/Home
+2026-05-08 08:43:45,684 493   DEBUG Bats main                 java.vendor: Eclipse Adoptium
+2026-05-08 08:43:45,684 494   DEBUG Bats main                 java.compiler: null
+2026-05-08 08:43:45,685 495   DEBUG Bats main                 java.home: /Library/Java/JavaVirtualMachines/temurin-26.jdk/Contents/Home
+2026-05-08 08:43:45,686 496   DEBUG Bats main                 java.home: /Library/Java/JavaVirtualMachines/temurin-26.jdk/Contents/Home
+2026-05-08 08:43:45,687 497   DEBUG Bats main                 os.arch: x86_64
+2026-05-08 08:43:45,688 498   DEBUG Bats main                 os.name: Mac OS X
+2026-05-08 08:43:45,689 499   DEBUG Bats main                 user.dir: /Users/lukas/Documents/git/bats/Bats
+2026-05-08 08:43:45,690 500   DEBUG Bats main                 user.home: /Users/lukas
+2026-05-08 08:43:45,690 501   DEBUG Bats main                 user.name: lukas
+2026-05-08 08:43:45,691 502   DEBUG Bats main                 charset: UTF-8
+2026-05-08 08:43:45,695 503   DEBUG Bats main                 max memory: 4096 MB
+2026-05-08 08:43:47,360 170   INFO  Setting init                 File (/Users/lukas/Documents/git/bats/Bats/settings/general.xml) will be opened!
+2026-05-08 08:43:47,397 173   INFO  Setting init                 File (/Users/lukas/Documents/git/bats/Bats/settings/general.xml) opened!
+2026-05-08 08:43:47,430 663   DEBUG Setting setIsotope           Last isotope was C14
+2026-05-08 08:43:51,116 283   DEBUG Setting selectLists          File (/Users/lukas/Documents/git/bats/Bats/settings/C14/select.xml) for selectCol settings opened!
+2026-05-08 08:43:51,146 184   INFO  Setting init                 File (/Users/lukas/Documents/git/bats/Bats/settings/C14/isotope.xml) for calib opened!
+2026-05-08 08:43:51,171 189   INFO  Setting init                 File (/Users/lukas/Documents/git/bats/Bats/settings/C14/calib.xml) for calib opened!
+2026-05-08 08:43:51,175 196   INFO  Setting init                 Home directory opend (/Users/lukas/bats)
+2026-05-08 08:43:51,178 211   INFO  Setting init                 Mag dir set (/Users/lukas/bats/)
+2026-05-08 08:43:51,181 129   DEBUG Setting <init>               Chi-select: 1
+2026-05-08 08:43:51,228 257   DEBUG Setting load_chi             chi2-file successfully read!
+2026-05-08 08:43:51,230 96    DEBUG Bats startup              Isotope is set to: C14
+2026-05-08 08:43:51,232 170   INFO  Setting init                 File (/Users/lukas/Documents/git/bats/Bats/settings/general.xml) will be opened!
+2026-05-08 08:43:51,244 173   INFO  Setting init                 File (/Users/lukas/Documents/git/bats/Bats/settings/general.xml) opened!
+2026-05-08 08:43:51,255 184   INFO  Setting init                 File (/Users/lukas/Documents/git/bats/Bats/settings/C14/isotope.xml) for calib opened!
+2026-05-08 08:43:51,264 189   INFO  Setting init                 File (/Users/lukas/Documents/git/bats/Bats/settings/C14/calib.xml) for calib opened!
+2026-05-08 08:43:51,266 196   INFO  Setting init                 Home directory opend (/Users/lukas/bats)
+2026-05-08 08:43:51,268 211   INFO  Setting init                 Mag dir set (/Users/lukas/bats/)
+2026-05-08 08:43:51,296 97    DEBUG IODb <init>               Create IODB
+2026-05-08 08:43:51,311 104   DEBUG FormatT <init>               Initialised format file: ./settings/C14/table/cycle.xml
+2026-05-08 08:43:51,314 205   DEBUG Bats initDb               DB setup: sql
+2026-05-08 08:43:51,345 117   DEBUG Calc loadSetting          Settings loaded in DataCalc
+2026-05-08 08:43:51,349 56    DEBUG StdNom <init>               stdNom
+2026-05-08 08:43:51,350 58    DEBUG StdNom <init>               DB
+2026-05-08 08:43:51,352 1362  DEBUG IODb getStd               Start login
+2026-05-08 08:43:51,363 124   DEBUG IODb getSettings          2013
+2026-05-08 08:43:51,390 155   DEBUG IODb getSettings          Cycle import set false (1)
+2026-05-08 08:43:51,398 164   DEBUG IODb getSettings          DB driver loaded: com.mysql.jdbc.Driver
+2026-05-08 08:43:51,414 169   DEBUG IODb getSettings          Fri Feb 01 08:43:51 CET 2013
+2026-05-08 08:43:51,426 225   DEBUG IODb getSelectSQL         read db settings
+2026-05-08 08:43:53,203 1580  DEBUG IODb login                Start logout timer
+2026-05-08 08:43:53,206 1587  DEBUG IODb login                Login to mysql://mysql-lip.phys.ethz.ch with id 'wacker'
+2026-05-08 08:43:53,229 1375  DEBUG IODb getStd               SELECT type, indexnr, f14c, f14c_sig, d13c, d13c_sig, d13c_nom, blank, active from db_ams.sampletype_t ORDER BY indexnr ASC
+2026-05-08 08:43:53,265 49    DEBUG StdNomTable <init>               Crate table for std/bl
+2026-05-08 08:43:53,273 77    DEBUG StdNomTable <init>               table finished
+2026-05-08 08:43:53,275 27    INFO  Calc14C <init>               Isobar is set to iso
+2026-05-08 08:43:53,284 60    DEBUG Calib <init>               Linear interpolation used for calibration.
+2026-05-08 08:43:53,286 85    DEBUG Calib openFile             Opend file: /Users/lukas/Documents/git/bats/Bats/settings/calib/Cal_ETH_oetzi.14c
+2026-05-08 08:43:53,294 105   DEBUG Calib getRecords           Set BP false (-1950)
+2026-05-08 08:43:53,415 71    DEBUG Calib <init>               Opened file for calibration: /Users/lukas/Documents/git/bats/Bats/settings/calib/Cal_ETH_oetzi.14c
+2026-05-08 08:43:53,422 145   DEBUG Bats initPanel            Action started
+2026-05-08 08:43:53,548 48    DEBUG TBarIcon <init>               Toolbar button1 added.
+2026-05-08 08:43:53,582 115   DEBUG TBarIcon <init>               Toolbar db buttons added.
+2026-05-08 08:44:53,569 488   DEBUG Bats main                 java.class.version: 70.0
+2026-05-08 08:44:53,576 489   DEBUG Bats main                 java.class.path: /Users/lukas/Documents/git/bats/Bats/target/classes:/Users/lukas/Documents/git/bats/Bats/lib/log4j-core-2.17.1.jar:/Users/lukas/Documents/git/bats/Bats/lib/acrobat.jar:/Users/lukas/Documents/git/bats/Bats/lib/BrowserLauncher2.jar:/Users/lukas/Documents/git/bats/Bats/lib/commons-codec-1.7.jar:/Users/lukas/Documents/git/bats/Bats/lib/commons-math-1.1.jar:/Users/lukas/Documents/git/bats/Bats/lib/core-renderer-minimal.jar:/Users/lukas/Documents/git/bats/Bats/lib/flying-saucer-core-9.1.20.jar:/Users/lukas/Documents/git/bats/Bats/lib/flying-saucer-pdf-9.1.20.jar:/Users/lukas/Documents/git/bats/Bats/lib/iText-2.0.8.jar:/Users/lukas/Documents/git/bats/Bats/lib/jcommon-1.0.15.jar:/Users/lukas/Documents/git/bats/Bats/lib/jfreechart-1.0.12.jar:/Users/lukas/Documents/git/bats/Bats/lib/looks-2.1.4.jar:/Users/lukas/Documents/git/bats/Bats/lib/mysql-connector-java-5.1.16-bin.jar:/Users/lukas/Documents/git/bats/Bats/lib/resolver.jar:/Users/lukas/Documents/git/bats/Bats/lib/log4j-api-2.17.1.jar:/Users/lukas/Documents/git/bats/Bats/lib/jaxen-1.2.0.jar:/Users/lukas/Documents/git/bats/Bats/lib/batik-all-1.16.jar:/Users/lukas/Documents/git/bats/Bats/lib/org.w3c.dom.svg-1.1.0.jar:/Users/lukas/Documents/git/bats/Bats/lib/jdom-2.0.6.jar:/Users/lukas/Documents/git/bats/Bats/lib/xml-apis-ext-1.3.04.jar:/Users/lukas/Documents/git/bats/Bats/lib/xercesImpl.jar:/Users/lukas/Documents/git/bats/Bats/lib/xmlgraphics-commons-2.8.jar:/Users/lukas/.m2/repository/xml-apis/xml-apis-ext/1.3.04/xml-apis-ext-1.3.04.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/xmlgraphics-commons/2.7/xmlgraphics-commons-2.7.jar:/Users/lukas/.m2/repository/commons-io/commons-io/1.3.1/commons-io-1.3.1.jar:/Users/lukas/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-anim/1.16/batik-anim-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-awt-util/1.16/batik-awt-util-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-css/1.16/batik-css-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-parser/1.16/batik-parser-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-shared-resources/1.16/batik-shared-resources-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-dom/1.16/batik-dom-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-xml/1.16/batik-xml-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-ext/1.16/batik-ext-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-svg-dom/1.16/batik-svg-dom-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-transcoder/1.16/batik-transcoder-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-bridge/1.16/batik-bridge-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-gvt/1.16/batik-gvt-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-svggen/1.16/batik-svggen-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-util/1.16/batik-util-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-constants/1.16/batik-constants-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-i18n/1.16/batik-i18n-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-swing/1.16/batik-swing-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-gui-util/1.16/batik-gui-util-1.16.jar:/Users/lukas/.m2/repository/org/apache/xmlgraphics/batik-script/1.16/batik-script-1.16.jar:/Users/lukas/.m2/repository/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar:/Users/lukas/.m2/repository/org/apache/commons/commons-math/2.2/commons-math-2.2.jar:/Users/lukas/.m2/repository/org/xhtmlrenderer/core-renderer/R8/core-renderer-R8.jar:/Users/lukas/.m2/repository/org/xhtmlrenderer/flying-saucer-core/9.1.22/flying-saucer-core-9.1.22.jar:/Users/lukas/.m2/repository/org/xhtmlrenderer/flying-saucer-pdf/9.1.22/flying-saucer-pdf-9.1.22.jar:/Users/lukas/.m2/repository/org/bouncycastle/bcmail-jdk14/1.64/bcmail-jdk14-1.64.jar:/Users/lukas/.m2/repository/org/bouncycastle/bcpkix-jdk14/1.64/bcpkix-jdk14-1.64.jar:/Users/lukas/.m2/repository/org/bouncycastle/bctsp-jdk14/1.46/bctsp-jdk14-1.46.jar:/Users/lukas/.m2/repository/org/bouncycastle/bcprov-jdk14/1.64/bcprov-jdk14-1.64.jar:/Users/lukas/.m2/repository/com/lowagie/itext/2.1.7/itext-2.1.7.jar:/Users/lukas/.m2/repository/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138.jar:/Users/lukas/.m2/repository/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138.jar:/Users/lukas/.m2/repository/jaxen/jaxen/2.0.0/jaxen-2.0.0.jar:/Users/lukas/.m2/repository/org/jfree/jcommon/1.0.24/jcommon-1.0.24.jar:/Users/lukas/.m2/repository/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.jar:/Users/lukas/.m2/repository/org/jfree/jfreechart/1.5.4/jfreechart-1.5.4.jar:/Users/lukas/.m2/repository/org/apache/logging/log4j/log4j-core/2.20.0/log4j-core-2.20.0.jar:/Users/lukas/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/Users/lukas/.m2/repository/com/jgoodies/looks/2.2.2/looks-2.2.2.jar:/Users/lukas/.m2/repository/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar:/Users/lukas/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar:/Users/lukas/.m2/repository/org/apache/maven/resolver/maven-resolver-api/1.9.14/maven-resolver-api-1.9.14.jar:/Users/lukas/.m2/repository/xalan/xalan/2.7.3/xalan-2.7.3.jar:/Users/lukas/.m2/repository/xalan/serializer/2.7.3/serializer-2.7.3.jar:/Users/lukas/.m2/repository/xerces/xercesImpl/2.12.2/xercesImpl-2.12.2.jar:/Users/lukas/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/lukas/.m2/repository/com/adobe/acrobat/acrobat/1.1/acrobat-1.1.jar:/Users/lukas/.m2/repository/mrj/MRJToolkitStubs/1.0/MRJToolkitStubs-1.0.jar
+2026-05-08 08:44:53,578 490   DEBUG Bats main                 java.version: 26.0.1
+2026-05-08 08:44:53,579 491   DEBUG Bats main                 java.vm.version: 26.0.1+8
+2026-05-08 08:44:53,580 492   DEBUG Bats main                 java.home: /Library/Java/JavaVirtualMachines/temurin-26.jdk/Contents/Home
+2026-05-08 08:44:53,582 493   DEBUG Bats main                 java.vendor: Eclipse Adoptium
+2026-05-08 08:44:53,583 494   DEBUG Bats main                 java.compiler: null
+2026-05-08 08:44:53,584 495   DEBUG Bats main                 java.home: /Library/Java/JavaVirtualMachines/temurin-26.jdk/Contents/Home
+2026-05-08 08:44:53,584 496   DEBUG Bats main                 java.home: /Library/Java/JavaVirtualMachines/temurin-26.jdk/Contents/Home
+2026-05-08 08:44:53,585 497   DEBUG Bats main                 os.arch: x86_64
+2026-05-08 08:44:53,586 498   DEBUG Bats main                 os.name: Mac OS X
+2026-05-08 08:44:53,586 499   DEBUG Bats main                 user.dir: /Users/lukas/Documents/git/bats/Bats
+2026-05-08 08:44:53,588 500   DEBUG Bats main                 user.home: /Users/lukas
+2026-05-08 08:44:53,588 501   DEBUG Bats main                 user.name: lukas
+2026-05-08 08:44:53,590 502   DEBUG Bats main                 charset: UTF-8
+2026-05-08 08:44:53,596 503   DEBUG Bats main                 max memory: 4096 MB
+2026-05-08 08:44:55,365 170   INFO  Setting init                 File (/Users/lukas/Documents/git/bats/Bats/settings/general.xml) will be opened!
+2026-05-08 08:44:55,403 173   INFO  Setting init                 File (/Users/lukas/Documents/git/bats/Bats/settings/general.xml) opened!
+2026-05-08 08:44:55,439 663   DEBUG Setting setIsotope           Last isotope was C14
+2026-05-08 08:45:00,813 283   DEBUG Setting selectLists          File (/Users/lukas/Documents/git/bats/Bats/settings/C14/select.xml) for selectCol settings opened!
+2026-05-08 08:45:00,850 184   INFO  Setting init                 File (/Users/lukas/Documents/git/bats/Bats/settings/C14/isotope.xml) for calib opened!
+2026-05-08 08:45:00,863 189   INFO  Setting init                 File (/Users/lukas/Documents/git/bats/Bats/settings/C14/calib.xml) for calib opened!
+2026-05-08 08:45:00,865 196   INFO  Setting init                 Home directory opend (/Users/lukas/bats)
+2026-05-08 08:45:00,866 211   INFO  Setting init                 Mag dir set (/Users/lukas/bats/)
+2026-05-08 08:45:00,868 129   DEBUG Setting <init>               Chi-select: 1
+2026-05-08 08:45:00,918 257   DEBUG Setting load_chi             chi2-file successfully read!
+2026-05-08 08:45:00,919 96    DEBUG Bats startup              Isotope is set to: C14
+2026-05-08 08:45:00,920 170   INFO  Setting init                 File (/Users/lukas/Documents/git/bats/Bats/settings/general.xml) will be opened!
+2026-05-08 08:45:00,945 173   INFO  Setting init                 File (/Users/lukas/Documents/git/bats/Bats/settings/general.xml) opened!
+2026-05-08 08:45:00,955 184   INFO  Setting init                 File (/Users/lukas/Documents/git/bats/Bats/settings/C14/isotope.xml) for calib opened!
+2026-05-08 08:45:00,965 189   INFO  Setting init                 File (/Users/lukas/Documents/git/bats/Bats/settings/C14/calib.xml) for calib opened!
+2026-05-08 08:45:00,967 196   INFO  Setting init                 Home directory opend (/Users/lukas/bats)
+2026-05-08 08:45:00,967 211   INFO  Setting init                 Mag dir set (/Users/lukas/bats/)
+2026-05-08 08:45:00,995 97    DEBUG IODb <init>               Create IODB
+2026-05-08 08:45:01,006 104   DEBUG FormatT <init>               Initialised format file: ./settings/C14/table/cycle.xml
+2026-05-08 08:45:01,008 205   DEBUG Bats initDb               DB setup: sql
+2026-05-08 08:45:01,036 117   DEBUG Calc loadSetting          Settings loaded in DataCalc
+2026-05-08 08:45:01,042 56    DEBUG StdNom <init>               stdNom
+2026-05-08 08:45:01,042 58    DEBUG StdNom <init>               DB
+2026-05-08 08:45:01,045 1362  DEBUG IODb getStd               Start login
+2026-05-08 08:45:01,058 124   DEBUG IODb getSettings          2013
+2026-05-08 08:45:01,106 155   DEBUG IODb getSettings          Cycle import set false (1)
+2026-05-08 08:45:01,117 164   DEBUG IODb getSettings          DB driver loaded: com.mysql.jdbc.Driver
+2026-05-08 08:45:01,134 169   DEBUG IODb getSettings          Fri Feb 01 08:45:01 CET 2013
+2026-05-08 08:45:01,149 225   DEBUG IODb getSelectSQL         read db settings
+2026-05-08 08:45:03,356 1580  DEBUG IODb login                Start logout timer
+2026-05-08 08:45:03,359 1587  DEBUG IODb login                Login to mysql://mysql-lip.phys.ethz.ch with id 'wacker'
+2026-05-08 08:45:03,379 1375  DEBUG IODb getStd               SELECT type, indexnr, f14c, f14c_sig, d13c, d13c_sig, d13c_nom, blank, active from db_ams.sampletype_t ORDER BY indexnr ASC
+2026-05-08 08:45:03,411 49    DEBUG StdNomTable <init>               Crate table for std/bl
+2026-05-08 08:45:03,419 77    DEBUG StdNomTable <init>               table finished
+2026-05-08 08:45:03,421 27    INFO  Calc14C <init>               Isobar is set to iso
+2026-05-08 08:45:03,436 60    DEBUG Calib <init>               Linear interpolation used for calibration.
+2026-05-08 08:45:03,440 85    DEBUG Calib openFile             Opend file: /Users/lukas/Documents/git/bats/Bats/settings/calib/Cal_ETH_oetzi.14c
+2026-05-08 08:45:03,447 105   DEBUG Calib getRecords           Set BP false (-1950)
+2026-05-08 08:45:03,573 71    DEBUG Calib <init>               Opened file for calibration: /Users/lukas/Documents/git/bats/Bats/settings/calib/Cal_ETH_oetzi.14c
+2026-05-08 08:45:03,626 145   DEBUG Bats initPanel            Action started
+2026-05-08 08:45:03,730 48    DEBUG TBarIcon <init>               Toolbar button1 added.
+2026-05-08 08:45:03,755 115   DEBUG TBarIcon <init>               Toolbar db buttons added.
+2026-05-08 08:45:03,782 39    DEBUG MenuBar <init>               Start adding menue
+2026-05-08 08:45:03,840 48    DEBUG MenuBar <init>               Added the following menue: File
+2026-05-08 08:45:03,843 58    DEBUG MenuBar <init>               Added the following menue: DB
+2026-05-08 08:45:03,844 66    DEBUG MenuBar <init>               Added the following menue: Corrections
+2026-05-08 08:45:03,845 73    DEBUG MenuBar <init>               Added the following menue: Calculations
+2026-05-08 08:45:03,845 240   DEBUG MenuBar menu_update          Updare menue.
+2026-05-08 08:45:03,890 611   DEBUG MenuBar menu_update          Update done.
+2026-05-08 08:45:04,010 159   DEBUG MenuBar <init>               Added the following menue: Table settings
+2026-05-08 08:45:04,015 198   DEBUG MenuBar <init>               Added the following menue: Window
+2026-05-08 08:45:04,018 226   DEBUG MenuBar <init>               Added the following menue: Window
+2026-05-08 08:45:04,018 152   DEBUG Bats initPanel            Menu bar created
+2026-05-08 08:45:04,020 160   DEBUG Bats initPanel            Toolbar added
+2026-05-08 08:45:04,063 339   DEBUG InfoPanel <init>               1
+2026-05-08 08:45:04,086 73    DEBUG InfoPanel <init>               gPanel added
+2026-05-08 08:45:04,088 80    DEBUG InfoPanel <init>               cPanel added
+2026-05-08 08:45:04,088 166   DEBUG Bats initPanel            infoPanel created
+2026-05-08 08:45:04,154 104   DEBUG FormatT <init>               Initialised format file: ./settings/C14/table/passes_mean.xml
+2026-05-08 08:45:04,195 104   DEBUG FormatT <init>               Initialised format file: ./settings/C14/table/passes.xml
+2026-05-08 08:45:04,223 104   DEBUG FormatT <init>               Initialised format file: ./settings/C14/table/blank.xml
+2026-05-08 08:45:04,258 104   DEBUG FormatT <init>               Initialised format file: ./settings/C14/table/std.xml
+2026-05-08 08:45:04,278 104   DEBUG FormatT <init>               Initialised format file: ./settings/C14/table/std13.xml
+2026-05-08 08:45:04,307 104   DEBUG FormatT <init>               Initialised format file: ./settings/C14/table/mean.xml
+2026-05-08 08:45:04,325 104   DEBUG FormatT <init>               Initialised format file: /Users/lukas/Documents/workspace_new/Bats/settings/C14/table/output_water.xml
+2026-05-08 08:45:04,415 309   DEBUG Bats tabbedPane           Tabbed pane created
