@@ -1321,7 +1321,6 @@ public class IODb implements DbConnect {
 						} catch (NullPointerException e) {
 							log.info("No Magazine selected!");
 						}
-				   		Setting.getElement("/bat/isotope/db/sql-import/last_mag").setText(magazine);
 					} else {
 						String message = String.format( "<html>No Magazine available!<br>(between "+date.getTime()+" and "+date2.getTime()+")</html>");
 					    JOptionPane.showMessageDialog( null, message );
